@@ -52,7 +52,7 @@ function onWindowResize() {
 
 function animate() {
 
-  skybox.rotation.x += 0.001;
+  //skybox.rotation.x += 0.001;
   skybox.rotation.y += 0.001;
 
   renderer.render(scene, camera);
