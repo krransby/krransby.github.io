@@ -89,8 +89,8 @@ textarea {
 
 :root {
 
-  --font-colour-1:    #a7a1a1;
-  --font-colour-2:    #f0ffff;
+  --font-colour-1:    #161616;
+  --font-colour-2:    #a7a1a1;
   --background-image: url("../img/background.JPG") no-repeat center center fixed;
 
 }
@@ -103,8 +103,8 @@ body
   font-family:        "Inconsolata", monospace;
   font-size:          12pt;
   height:             100%;
-  background:         var(--background-image);
-  background-size:    cover;
+  /*background:         var(--background-image);
+  background-size:    cover;*/
 }
 div.footer
 {
@@ -128,11 +128,10 @@ img
 /* external */
 
 .blur {
-  
-  background-size:      cover;
+  /*background:         var(--background-image);
+  background-size:    cover;*/
   overflow:             hidden;
   filter:               blur(13px);
-  backdrop-filter:      blur(13px);
   position:             absolute;
   height:               300px;
   top:                  -50px;
@@ -142,8 +141,8 @@ img
 }
 
 .widget {
-  border-top:           1px solid rgba(255, 255, 240, .5);
-  border-bottom:        1px solid rgba(255, 255, 240, .5);
+  border-top:           1px solid rgba(16, 16, 16, 0.5);
+  border-bottom:        1px solid rgba(16, 16, 16, 0.5);
   height:               200px;
   width:                100%;
   overflow:             hidden;
@@ -254,8 +253,8 @@ img
 }
 #krmain a.showing,
 #krmain a:hover {
-  background:           var(--font-colour-2);
-  color:                black;
+  background:           black;
+  color:                var(--font-colour-2);
   text-decoration:      none;
   position:             relative;
   padding:              2px 3px;
