@@ -1,4 +1,4 @@
-let scene, camera, renderer, skyboxGeo, skybox, myReq, counter;
+let scene, camera, renderer, skyboxGeo, skybox, myReq, counter = 0;
 
 function createMaterialArray() {
   const skyboxImagepaths = ([
@@ -52,9 +52,8 @@ function onWindowResize() {
 
 function animate() {
 
-  counter += 0.001
-
-  skybox.rotation.x += Math.sin(counter);
+  counter += 0.01;
+  skybox.rotation.x = 0.5 + (Math.sin(counter) / 4);
   skybox.rotation.y += 0.001;
 
   renderer.render(scene, camera);
