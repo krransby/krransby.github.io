@@ -52,8 +52,8 @@ function onWindowResize() {
 
 function animate() {
 
-  counter += 0.01;
-  skybox.rotation.x = 0.5 + (Math.sin(counter) / 4);
+  counter += 0.005;
+  skybox.rotation.x = 1.25 + (Math.sin(counter) / 4);
   skybox.rotation.y += 0.001;
 
   renderer.render(scene, camera);
