@@ -127,25 +127,14 @@ img
 
 /* external */
 
-.blur {
-  /*background:         var(--background-image);
-  background-size:    cover;*/
-  overflow:             hidden;
-  filter:               blur(13px);
-  position:             absolute;
-  height:               300px;
-  top:                  -50px;
-  left:                 -50px;
-  right:                -50px;
-  bottom:               -50px;
-}
-
 .widget {
-  border-top:           1px solid rgba(16, 16, 16, 0.5);
-  border-bottom:        1px solid rgba(16, 16, 16, 0.5);
+  border:               1px solid rgba(16, 16, 16, 0.5);
+  background:           azure;
+  margin:               auto 25vw 25vw auto;
   height:               200px;
-  width:                100%;
+  width:                60%;
   overflow:             hidden;
+  box-shadow:           0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .center {
@@ -212,7 +201,7 @@ img
   table-layout:         fixed;
   width:                100%;
   top:                  25%;
-  left:                 25%;
+  left:                 5%;
   white-space:          nowrap;
   letter-spacing:       -6px;
 }
