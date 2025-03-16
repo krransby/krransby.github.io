@@ -1,3 +1,5 @@
+import * as THREE from 'three';
+
 let scene, camera, renderer, skyboxGeo, skybox, myReq, counter = 0;
 
 function createMaterialArray() {
@@ -18,7 +20,6 @@ function createMaterialArray() {
 }
 
 function init() {
-
   scene = new THREE.Scene();
   camera = new THREE.PerspectiveCamera(
     55,
@@ -41,8 +42,8 @@ function init() {
   scene.add(skybox);
 
   window.addEventListener('resize', onWindowResize, false);
-  animate();
 }
+
 function onWindowResize() {
   camera.aspect = window.innerWidth / window.innerHeight;
 
@@ -62,3 +63,4 @@ function animate() {
 }
 
 init();
+animate();
